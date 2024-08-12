@@ -2,6 +2,17 @@ html,
 body {
     height: 100%;
 }
+main {
+    flex: 1;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+aside {
+    width: 200px;
+}
 
 aside .nav-pills .nav-link {
     border-radius: 0;

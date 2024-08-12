@@ -11,9 +11,12 @@ use yii\bootstrap5\NavBar;
 NavBar::begin([
     'brandLabel' => Yii::$app->name,
     'brandUrl' => Yii::$app->homeUrl,
+    'options' => [
+        'class' => 'shadow-sm navbar-expand-lg navbar-light bg-light',
+    ],
 ]);
 $menuItems = [
-    ['label' => 'Home', 'url' => ['/site/index']],
+    ['label' => 'Create', 'url' => ['/site/index']],
 
 ];
 if (Yii::$app->user->isGuest) {
@@ -27,7 +30,7 @@ if (Yii::$app->user->isGuest) {
 }
 
 echo Nav::widget([
-    'options' => ['class' => 'navbar-nav mr-7'],
+    'options' => ['class' => 'navbar-nav ms-auto'],
     'items' => $menuItems,
 ]);
 // if (Yii::$app->user->isGuest) {

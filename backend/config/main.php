@@ -9,7 +9,7 @@ $params = array_merge(
 return [
     'id' => 'app-backend',
     'name' => 'Youtube Clone',
-    'homeUrl' => '/admin',
+    'homeUrl' => '/site/index',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
